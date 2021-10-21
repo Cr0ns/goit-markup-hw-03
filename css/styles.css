@@ -23,7 +23,14 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-
+/* утилиты */
+.list {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
 ul {
   list-style: none;
 }
@@ -62,11 +69,15 @@ ul {
   text-decoration: none;
 }
 /*button*/
-
+.main-filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 button {
   border: 0px;
   text-align: center;
   cursor: pointer;
+  background: #f5f4fa;
   font-family: inherit;
 }
 .button {
@@ -86,31 +97,49 @@ button {
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--third-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .filter .button:hover,
 .filter .button:focus {
   color: var(--header-color);
   background-color: var(--third-text-color);
 }
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+/* .filter .filter-item {
+  margin-right: 8px;
+  outline: 1px solid red;
+}
+.filter .filter-item:last-child {
+  margin-right: 0;
+} */
+.filter .filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+/* main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 /*Site nav*/
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
-/* .site-nav .item {
-  margin-right: 50px;
-}
-.site-nav .item:last-child {
-  margin-right: 0;
-} */
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
+
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 
 .site-nav .link.current {
@@ -130,6 +159,13 @@ button {
 .site-nav .link:focus {
   color: var(--third-text-color);
 }
+.contact-information {
+  display: flex;
+  margin-left: auto;
+}
+.contact-information .item + .item {
+  margin-left: 50px;
+}
 .contact-information .link {
   color: var(--second-text-color);
   font-weight: 500;
@@ -144,10 +180,7 @@ button {
 .header-logo {
   color: var(--secondary-title-color);
 }
-.list {
-  padding: 0;
-  margin: 0;
-}
+
 .list-hero {
   padding: 0;
 }
@@ -196,6 +229,12 @@ button {
 .peculiarities {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: teal;
+}
+
+.peculiarities-list .peculiarities-item {
+  width: 270px;
+  margin: 47px 25px;
 }
 .peculiarities-list .title {
   margin-top: 0;
@@ -217,6 +256,15 @@ button {
   margin-top: 0;
   margin-bottom: 94px;
 }
+.peculiarities-list {
+  margin: -47px -25px;
+}
+.peculiarities-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: tomato;
+}
+
 /*--------------------portfolio*--------------------/
 
 /*work*/
@@ -224,6 +272,7 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-bottom: 4px;
 }
 .work-text {
   color: var(--second-text-color);
@@ -241,6 +290,7 @@ button {
 }
 .footer {
   background-color: #2f303a;
+  padding-bottom: 60px;
 }
 .address-link {
   color: var(--primary-white-color);
@@ -264,3 +314,24 @@ button {
 .footer-logo {
   color: var(--primary-white-color);
 }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: teal; */
+}
+.flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+.flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.flex-element {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.content {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
+}
+/* доделать тени на кнопки и футер */

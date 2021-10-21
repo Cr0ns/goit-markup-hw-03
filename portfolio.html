@@ -19,18 +19,19 @@
     <!-- Шапка сайта -->
         <header>
             <div class="container">
-                <nav>
+                <nav class="main-nav">
                     <a href="./" class="logo">Web<span class="header-logo">Studio</span></a>
                     <ul class="site-nav list">
-                        <li><a class="link" href="./index.html">Студия</a></li>
-                        <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
-                        <li><a class="link" href="">Контакты</a></li>
+                        <li class="item"><a class="link" href="./index.html">Студия</a></li>
+                        <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="item"><a class="link" href="">Контакты</a></li>
                     </ul>
-                </nav>
+                
                 <ul class="contact-information list">
-                    <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
+                </nav>
         </header>
     </div>
     <main>
@@ -40,67 +41,85 @@
                 <div class="container">
                     <h1 class="visually-hidden">Портфолио</h1>
                     <ul class="filter">
-                        <li>
+                        <li class="filter-item">
                             <button type="button" class="button primary">Все</button>
                         </li>
-                        <li>
+                        <li class="filter-item">
                             <button type="button" class="button secondary">Веб-сайты</button>
                         </li>
-                        <li>
+                        <li class="filter-item">
                             <button type="button" class="button">Приложения</button>
                         </li>
-                        <li>
+                        <li class="filter-item">
                             <button type="button" class="button">Дизайн</button>
                         </li>
-                        <li>
+                        <li class="filter-item">
                             <button type="button" class="button">Маркетинг</button>
                         </li>
                     </ul>
-                    <ul class="work">
-                        <li>
+                    <ul class="work-list flex-container">
+                        <li class="flex-element">
                             <img src="./images/p-img1.jpg" alt="серый-ноутбук-с-тремя-картинками-людей" width="370">
-                            <h2 class="work-title">Технокряк</h2>
-                            <p class="work-text">Веб-сайт</p>
+                            <div class="content">
+                                <h2 class="work-title">Технокряк</h2>
+                                <p class="work-text">Веб-сайт</p>
+                        </div>
                         </li>
-                        <li>
+                        <li class="flex-element">
                             <img src="./images/p-img2.jpg" alt="игра-в-баскетбол-двух-людей" width="370">
-                            <h2 class="work-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                            <p class="work-text">Дизайн</p>
+                            <div class="content">
+                                <h2 class="work-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                                <p class="work-text">Дизайн</p>
+                            </div>
                         </li>
-                        <li>
+                        <li class="flex-element">
                             <img src="./images/p-img3.jpg" alt="эмблема-рыбы" width="370">
-                            <h2 class="work-title">Ресторан <span lang="en">Seafood</span></h2>
-                            <p class="work-text">Приложение</p>
+                            <div class="content">
+                                <h2 class="work-title">Ресторан <span lang="en">Seafood</span></h2>
+                                <p class="work-text">Приложение</p>
+                            </div>
                         </li>
-                        <li>
+                        <li class="flex-element">
                             <img src="./images/p-img4.jpg" alt="черные-наушники" width="370">
-                            <h2 class="work-title">Проект <span lang="en">Prime</span></h2>
-                            <p class="work-text">Маркетинг</p>
+                            <div class="content">
+                                <h2 class="work-title">Проект <span lang="en">Prime</span></h2>
+                                <p class="work-text">Маркетинг</p>
+                            </div>
                         </li>
-                        <li>
+                        <li class="flex-element">
                             <img src="./images/p-img5.jpg" alt="две-коробки" width="370">
-                            <h2 class="work-title">Проект <span lang="en">Boxes</span></h2>
-                            <p class="work-text">Приложение</p>
+                            <div class="content">
+                                <h2 class="work-title">Проект <span lang="en">Boxes</span></h2>
+                                <p class="work-text">Приложение</p>
+                            </div>
                         </li>
-                        <li>
+                        <li class="flex-element">
                             <img src="./images/p-img6.jpg" alt="монитор-с-картой" width="370">
-                            <h2 class="work-title" lang="en">Inspiration has no Borders</h2>
-                            <p class="work-text">Веб-сайт</p>
+                            <div class="content">
+                                <h2 class="work-title" lang="en">Inspiration has no Borders</h2>
+                                <p class="work-text">Веб-сайт</p>
+                            </div>
                         </li>
-                        <li>
+                        <li class="flex-element">
                             <img src="./images/p-img7.jpg" alt="книга-с-текстом" width="370">
-                            <h2 class="work-title">Издание <span lang="en">Limited Edition</span></h2>
-                            <p class="work-text">Дизайн</p>
+                            <div class="content">
+                                <h2 class="work-title">Издание <span lang="en">Limited Edition</span></h2>
+                                <p class="work-text">Дизайн</p>
+                            </div>
                         </li>
-                        <li>
+                        <li class="flex-element">
                             <img src="./images/p-img8.jpg" alt="картачка-с-надписью" width="370">
-                            <h2 class="work-title">Проект <span lang="en">LAB</span></h2>
-                            <p class="work-text">Маркетинг</p>
+                            <div class="content">
+                                <h2 class="work-title">Проект <span lang="en">LAB</span></h2>
+                                <p class="work-text">Маркетинг</p>
+                            </div>
                         </li>
-                        <li>
+                        <li class="flex-element">
                             <img src="./images/p-img9.jpg" alt="человек-за-нотбуком" width="370">
-                            <h2 class="work-title" lang="en">Growing Business</h2>
-                            <p class="work-text">Приложение</p>
+                            <div class="content">
+                                <h2 class="work-title" lang="en">Growing Business</h2>
+                                <p class="work-text">Приложение</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
