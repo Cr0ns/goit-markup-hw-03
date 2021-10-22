@@ -202,7 +202,6 @@ button {
 /*hero-title*/
 
 .hero {
-  min-width: 1600px;
   background-color: #2f303a;
   height: 600px;
   align-items: center;
