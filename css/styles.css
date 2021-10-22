@@ -61,6 +61,9 @@ ul {
   padding: 0px;
 }
 /* Шапка сайта */
+.header {
+  border: 1px solid #ececec;
+}
 .logo {
   color: var(--third-text-color);
   font-family: Raleway;
@@ -92,17 +95,36 @@ button {
   letter-spacing: 0.03em;
 }
 .hero-button {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background: var(--third-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button-btn {
+  border-radius: 5px;
+  min-width: 200px;
+  margin: 0 auto;
+  height: 50px;
   padding: 10px 32px;
 }
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--third-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .filter .button:hover,
 .filter .button:focus {
   color: var(--header-color);
   background-color: var(--third-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter {
   display: flex;
@@ -110,13 +132,6 @@ button {
   align-items: center;
   margin-bottom: 50px;
 }
-/* .filter .filter-item {
-  margin-right: 8px;
-  outline: 1px solid red;
-}
-.filter .filter-item:last-child {
-  margin-right: 0;
-} */
 .filter .filter-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -187,8 +202,13 @@ button {
 /*hero-title*/
 
 .hero {
-  text-align: center;
+  min-width: 1600px;
   background-color: #2f303a;
+  height: 600px;
+  align-items: center;
+  margin-inline: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-top: 0;
@@ -197,11 +217,22 @@ button {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--header-color);
 }
 
 /*section*/
-.section {
+.img-list {
+  display: flex;
+  text-align: center;
+  padding-bottom: 94px;
+}
+.img-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team {
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -211,17 +242,44 @@ button {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
 }
-.command-title {
+
+.team-list {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  margin-inline: auto;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-shadow {
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
 }
-.command-text {
+.team-text {
   color: var(--second-text-color);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /*peculiarities*/
@@ -229,12 +287,12 @@ button {
 .peculiarities {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: teal;
 }
-
+.peculiarities-item:not(:last-child) {
+  margin-right: 30px;
+}
 .peculiarities-list .peculiarities-item {
   width: 270px;
-  margin: 47px 25px;
 }
 .peculiarities-list .title {
   margin-top: 0;
@@ -252,17 +310,10 @@ button {
   margin-top: 0px;
   margin-bottom: 94px;
 }
-.peculiarities-list p {
-  margin-top: 0;
-  margin-bottom: 94px;
-}
+
 .peculiarities-list {
-  margin: -47px -25px;
-}
-.peculiarities-container {
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  background-color: tomato;
 }
 
 /*--------------------portfolio*--------------------/
@@ -288,6 +339,9 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.studio {
+  padding-top: 60px;
+}
 .footer {
   background-color: #2f303a;
   padding-bottom: 60px;
@@ -311,13 +365,18 @@ button {
 .address-list .address-contact:focus {
   color: var(--third-text-color);
 }
+.address-list {
+  margin-top: 20px;
+}
+.address-item {
+  margin-top: 9px;
+}
 .footer-logo {
   color: var(--primary-white-color);
 }
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  /* background-color: teal; */
 }
 .flex-element:nth-child(3n) {
   margin-right: 0;
@@ -334,4 +393,3 @@ button {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
 }
-/* доделать тени на кнопки и футер */
