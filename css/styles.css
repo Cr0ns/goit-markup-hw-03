@@ -66,6 +66,13 @@ ul {
 .header {
   border-bottom: 1px solid #ececec;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-connect {
+  margin-left: auto;
+}
 .logo {
   color: var(--third-text-color);
   font-family: Raleway;
@@ -334,8 +341,6 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.studio {
 }
 .footer {
   background-color: #2f303a;
