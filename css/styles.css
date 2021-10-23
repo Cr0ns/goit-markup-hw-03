@@ -29,6 +29,8 @@ body {
   margin: 0;
 }
 img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 ul {
@@ -62,7 +64,7 @@ ul {
 }
 /* Шапка сайта */
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   color: var(--third-text-color);
@@ -72,10 +74,7 @@ ul {
   text-decoration: none;
 }
 /*button*/
-.main-filter {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 button {
   border: 0px;
   text-align: center;
@@ -129,7 +128,6 @@ button {
 .filter {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 50px;
 }
 .filter .filter-item:not(:last-child) {
@@ -225,16 +223,14 @@ button {
 .img-list {
   display: flex;
   text-align: center;
-  padding-bottom: 94px;
 }
 .img-item:not(:last-child) {
   margin-right: 30px;
 }
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -247,7 +243,6 @@ button {
 
 .team-list {
   display: flex;
-  margin-top: 50px;
   align-items: center;
   margin-inline: auto;
 }
@@ -270,7 +265,7 @@ button {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .team-text {
   color: var(--second-text-color);
@@ -283,9 +278,12 @@ button {
 
 /*peculiarities*/
 
-.peculiarities {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.our-works {
+  padding-top: 0;
 }
 .peculiarities-item:not(:last-child) {
   margin-right: 30px;
@@ -307,7 +305,6 @@ button {
 }
 .peculiarities-title {
   margin-top: 0px;
-  margin-bottom: 94px;
 }
 
 .peculiarities-list {
@@ -322,7 +319,7 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .work-text {
   color: var(--second-text-color);
@@ -339,11 +336,11 @@ button {
   letter-spacing: 0.03em;
 }
 .studio {
-  padding-top: 60px;
 }
 .footer {
   background-color: #2f303a;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 .address-link {
   color: var(--primary-white-color);
@@ -364,11 +361,12 @@ button {
 .address-list .address-contact:focus {
   color: var(--third-text-color);
 }
-.address-list {
-  margin-top: 20px;
-}
+
 .address-item {
   margin-top: 9px;
+}
+.address {
+  margin-top: 20px;
 }
 .footer-logo {
   color: var(--primary-white-color);
